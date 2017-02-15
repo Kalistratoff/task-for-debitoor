@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html ng-app="sampleApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Debitoor Test Exercise">
+    <meta name="author" content="Nikolai Kalistratov">
+    <link rel="icon" href="https://debitoor.com/favicon.ico">
+
+    <title>Debitoor Test Exercise</title>
+
+    <!-- IMPORTS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+
+    <!--ANGULAR-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/router.js"></script>
+  </head>
+
+  <body>
+
+    <div ng-include="'app/partials/navigation.html'"></div>
+
+    <!-- VIEWS ARE LOADED HERE -->
+    <div ui-view=""></div>
+
+    <div class="container">
+      <hr>
+      <footer>
+        <p>2017 Nikolai Kalistratov</p>
+      </footer>
+    </div> <!-- /container -->
+
+    <!--SCRIPTS -->
+    <script src="app/components/main/mainController.js"></script>
+    <script src="app/components/users/usersController.js"></script>
+    <script src="app/components/users/usersService.js"></script>
+    <script src="app/components/countries/countriesController.js"></script>
+    <script src="app/components/countries/countriesService.js"></script>
+    <script src="app/components/customers/customersController.js"></script>
+    <script src="app/components/customers/customersService.js"></script>
+    <script src="app/components/resources/resourcesController.js"></script>
+    <script src="app/components/resources/resourcesService.js"></script>
+    <script src="app/components/custom-request/customRequestController.js"></script>
+    <script src="app/components/custom-request/customRequestService.js"></script>
+  </body>
+</html>
